@@ -20,8 +20,8 @@ main {
 
 .display #screen {
     width: 45vw;
-    height: 6vw;
-    font-size: 4vw;
+    height: 6vh;
+    font-size: 4vh;
     outline: none;
     border: none;
     text-align: right;
@@ -50,8 +50,8 @@ button {
     cursor: pointer;
     margin: 1%;
     width: 6vw;
-    height: 5vw;
-    font-size: 2vw;
+    height: 5vh;
+    font-size: 2vh;
     border: none;
     outline: none;
     border-radius: 5%;
@@ -92,6 +92,8 @@ button {
 
     .display #screen {
         width: 90%;
+        height: 5vh;
+        font-size: 2.5vh;
     }
 
     button,
@@ -100,5 +102,7 @@ button {
     #equal,
     .sci {
         width: 13%;
+        height: 5vh;
+        font-size: 1.5vh;
     }
 }
