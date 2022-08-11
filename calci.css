@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,74 +7,98 @@ body{
     min-height: 100vh;
 }
 
-main{
+main {
     margin: auto;
     text-align: center;
-    width: 45vw;
-    height: 50vh;
+    width: 50%;
     border-radius: 2%;
     padding: 1%;
     background-color: #383b3b;
     box-shadow: 12px 12px 20px #83858a,
-               inset 0px -12px 3px #1d1d1d;
-}    
+        inset 0px -12px 3px #1d1d1d;
+}
 
-.display #screen{
-    width: 97%;
-    height: 8vh;
-    font-size: 6vh;
+.display #screen {
+    width: 45vw;
+    height: 6vw;
+    font-size: 4vw;
     outline: none;
     border: none;
     text-align: right;
-    padding-right: 0.5em;
+    padding-right: 5%;
     border-radius: 2%;
     background-color: #d9dde0;
     box-shadow: inset 8px 8px 7px #838588,
-                inset -8px -8px 8px #f5f5f5;
+        inset -8px -8px 8px #f5f5f5;
 }
 
-.row{
+.row {
     width: 100%;
 }
 
-.btns{
+.btns {
     width: 100%;
-    margin: 1.5em 0;
+    margin: 5% auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-button{
-    cursor: pointer;            
+button {
+    padding: 2%;
+    cursor: pointer;
     margin: 1%;
     width: 6vw;
-    height: 5vh;
-    font-size: 3vh;
+    height: 5vw;
+    font-size: 2vw;
     border: none;
     outline: none;
     border-radius: 5%;
     background-color: #28282a;
     color: white;
     box-shadow: 5px 5px 8px #000000,
-                inset 1px 1px 2px rgb(0, 0, 0);
-               
+        inset 1px 1px 2px rgb(0, 0, 0);
+
 }
 
-.CE{
+.CE {
     background-color: rgb(199, 0, 66);
 }
 
-.AC{
+.AC {
     background-color: rgb(0, 151, 0);
-}             
+}
 
-#equal{
+#equal {
     background-color: rgb(0, 145, 182);
 }
 
-.sci{
+.sci {
     background-color: rgb(102, 102, 102);
 }
 
+.CE,
+.AC,
+#equal,
+.sci {
+    padding: 2%;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 80%;
+    }
+
+    .display #screen {
+        width: 90%;
+    }
+
+    button,
+    .CE,
+    .AC,
+    #equal,
+    .sci {
+        width: 13%;
+    }
+}
